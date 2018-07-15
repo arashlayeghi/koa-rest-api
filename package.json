@@ -1,0 +1,26 @@
+{
+  "name": "koa-rest-api",
+  "version": "1.0.0",
+  "description": "A simple koajs REST API with MongoDB database",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa",
+    "mongodb",
+    "rest"
+  ],
+  "author": "Arash Layeghi @ArashLayeghi",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.3.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "mongodb": "^3.1.1"
+  }
+}
