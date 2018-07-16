@@ -4,7 +4,7 @@ A simple koajs REST API with MongoDB
 1. npm install
 2. npm start
 
-3. Try to authenticate with the plain text username "user" and password "pwd" (in next phases these must come from database)
+3. Try to authenticate with the plain text username "user" and password "pwd" (in next phases these must come from database and obviously the password must be hashed)
 
 curl -X POST \
   http://localhost:3000/auth \
@@ -52,7 +52,7 @@ curl -X POST \
   
   #Deleting a person: (replace the person id in the query string)
   
-     curl -X DELETE \
+  curl -X DELETE \
   http://localhost:3000/people/5b4c809dd0fce04044ab2768 \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTUzMTc0MDA2MX0.1GW3VUqBIt3du97JdQXAJOo0HxHO6ef2SD7tOPENC2U' \
   -H 'cache-control: no-cache' \
