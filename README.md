@@ -6,8 +6,8 @@ A simple koajs REST API with MongoDB
 
 3. Try to authenticate with the plain text username "user" and password "pwd" (in next phases these must come from database and obviously the password must be hashed)
 
-curl -X POST \\
-  http://localhost:3000/auth \
+curl -X POST \
+http://localhost:3000/auth \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{"username": "user", "password": "pwd"}'
@@ -18,7 +18,7 @@ curl -X POST \\
   http://localhost:3000/people \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTUzMTc0MDA2MX0.1GW3VUqBIt3du97JdQXAJOo0HxHO6ef2SD7tOPENC2U' \
   -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
+  -H 'content-type: application/json'
   
   5. to add a new person use (obviously first replace your token):
   
@@ -37,7 +37,7 @@ curl -X POST \\
   http://localhost:3000/people/5b4c809dd0fce04044ab2768 \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTUzMTc0MDA2MX0.1GW3VUqBIt3du97JdQXAJOo0HxHO6ef2SD7tOPENC2U' \
   -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
+  -H 'content-type: application/json'
   
   #Updating a person: (replace the person id in the query string)
   
@@ -56,7 +56,7 @@ curl -X POST \\
   http://localhost:3000/people/5b4c809dd0fce04044ab2768 \
   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlciIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTUzMTc0MDA2MX0.1GW3VUqBIt3du97JdQXAJOo0HxHO6ef2SD7tOPENC2U' \
   -H 'cache-control: no-cache' \
-  -H 'content-type: application/json' \
+  -H 'content-type: application/json'
   
   
   
