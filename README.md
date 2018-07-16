@@ -6,7 +6,7 @@ A simple koajs REST API with MongoDB
 
 3. Try to authenticate with the plain text username "user" and password "pwd" (in next phases these must come from database and obviously the password must be hashed)
 
-curl -X POST \
+curl -X POST \\
   http://localhost:3000/auth \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
